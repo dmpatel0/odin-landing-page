@@ -10,12 +10,16 @@ body {
     justify-content: space-around;
     flex-direction: column;
     background-color: black;
+    padding-top: 65px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgb(0, 200, 255);
+    position: fixed;
+    width: 100vw;
+    background-color: black;
 }
 
 .logo {
@@ -48,8 +52,9 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 65px;
-    border-bottom: 1px solid rgba(0, 200, 255, 0.5);
+    margin: 0 65px;
+    padding: 65px 0;
+    border-bottom: 1px solid rgba(255, 127, 53, 0.5);
 }
 
 .future {
@@ -58,7 +63,7 @@ a {
 }
 
 .intro-text > p {
-    color: white;
+    color: rgba(255, 255, 255, 0.848);
 }
 
 .intro-text {
@@ -87,21 +92,109 @@ h1, h2, h3, h4, h5, p {
     flex-direction: column;
     background: black;
     padding: 65px;
+    padding-top: 25px;
     justify-content: center;
 }
 
 .content > h2 {
-    border: 1px solid white;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .content img {
     width: 200px;
     height: 200px;
+    border-radius: 30%;
+    border: 1px solid orange;
 }
 
 .info-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 127, 53, 0.5);
+    padding-bottom: 25px;
 }
+
+.info-card {
+    max-width: 200px;
+    height: auto;
+}
+
+.info-card > p {
+    color: rgba(255, 255, 255, 0.848);
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: 1px solid rgba(255, 127, 53, 0.5);
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: rgb(64, 64, 64);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.text {
+    width: 500px;
+    font-weight: 200;
+}
+
+.author {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.create-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.create-user {
+    background-color: orange;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.text > .sub {
+    font-size: 15px;
+}
+
+.text > .main {
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(0, 200, 255);
+    width: 100vw;
+    background-color: black;
+}
+
+.footer > p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
